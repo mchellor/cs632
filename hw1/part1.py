@@ -58,7 +58,7 @@ MyknnPred = knn.predict(iris_X_test)
 
 MyCLF = MyNearestNeighborClassifier(n_neighbors =3)
 MyCLF.fit(iris_X_train, iris_y_train)
-y_pred =MyCLF.predict(iris_X_test,iris_X_train)
+y_pred = MyCLF.predict(iris_X_test,iris_X_train)
 print('MyAccuracy:',accuracy_score(iris_y_test,y_pred))
 print("KnnAccuracy:",accuracy_score(iris_y_test,MyknnPred))
 
