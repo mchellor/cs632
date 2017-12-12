@@ -13,3 +13,10 @@ Answers for conceptual questions
 5. I would pick the size of diffent part of Iris. It could be totally different between different kind of flowers. It's numeric 
 
 1b.
+
+1. The strengths of BOW is that this method could detect the frequency of the specific words and compare the difference. If a mail contains many bad words, it would be determined as a spam.
+However, the weakness is that if a mail contains bad words but it is not a spam mail. For example, some reminders might contain bad words to ask you to avoid these. like drug, alcohol and so on.
+
+2. The words that appear infrequent are more predictive. The words that appear more frequent are less predictive. The more frequent a word appear, the more common that it appears in a mail. So it has less weight in judging a mail.
+
+3. I tried my classifer. The resault is always the same with KNN classifer. In my thought, the reason might be I used the most common 100 words without STOP words. I will upgrade later. In my opinion, the reason for misclassify might be various. The most common reason may be choosing the BOW. We should choose a BOW that contains most predictive words.
