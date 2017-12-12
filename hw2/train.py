@@ -1,11 +1,8 @@
 # coding: utf-8
-
-
 import numpy as np
 from PIL import Image
 from keras import optimizers
 import matplotlib.pyplot as plt
-
 
 TRAIN_PATH = "train.npy"
 VAL_PATH = "validation.npy"
@@ -66,7 +63,7 @@ hist = model.fit(train_images, train_labels,
                  batch_size=512,
                  validation_data=(val_images, val_labels))
 
-model.save('cats_and_dogs_small_2.h5')
+model.save('cats_vs_dogs_32_32_3_model.h5')
 
 
 acc = hist.history['acc']
